@@ -26,6 +26,33 @@
      <a href="/"><h1> Rob McNamara </h1></a>
     </header>
     <p><a href="https://github.com/RobMcNamara">Github</a> | <a href="https://www.linkedin.com/in/rob-mcnamara-572aa470/">LinkedIn</a> | <a href="https://hired.com/resumes/rob-mcnamara-london-united-kingdom">Resume</a> | <a href="/blog/testpage.html">Tinkering</a></p>
-<p>you idiot</p>
+<h2>Labrador Day 1</h2>
+<p>
+One of my recent ideas for a personal project has been inspired by a lady whom I live with. A blind lady named Marian. Marian is superhuman, she can do most day to day activities with virtually zero assistance, including cooking up a full Sunday roast and popping to the shops with her amazing Labrador Guide Dog Oak. You can checkout and donate to the wonderful folks at guide-dogs here: http://guidedogs.org </p>
+<p>
+Despite all of this, it is very difficult to see if there are obstructing objects on the floor of the living room – which their often are. Oak the Labrador (pictured here for science purposes) has many toys to keep her entertained, but she can be a bit clumsy about where she leave’s them and doesn’t always put them back in her toy-box. </p>
+
+<p>Sitting in our living room is an Amazon Echo, which thus far has been used as nothing more than a glorified radio / useless fact machine. The Raspberry Pi isn’t really earning her keep at home either, acting as a media centre that no one ever uses mostly. </p> 
+
+<h3>Light bulb moment.</h3> 
+
+<p>What if Marian could use that Echo, to ask the Pi as to whether there were any obstacles in the form of Oak’s toys on the living room floor. All I need is to add a webcam to the mix, and last time I checked, there was roughly 454,599 of them in a box in my room. </p>
+
+<p>It seems like the perfect object recognition machine learning exercise; train the model to recognise ten or so of oaks toys. A web-cam would point down from the roof and allow a view of the living room, and using object recognition could pinpoint where in a grid of the frame are the toys. It can work out if they are indeed an obstruction, and speak the answer back. There will also be a need to recognise other objects that aren’t technically obstacles i.e. Oak lying on the floor (who always moves out of the way), or someones legs. </p>
+
+I do have further plans for this, but I’m need to flesh them out further in my head in between job interviews. 
+
+My gut feeling is to begin this by setting up a small server that people in the house can upload photos (hopefully, many, many photos) of Oaks toys in order for it to become the data set to train against. I will also supplement this with data sets from the internet. Then, while this is happening, set to work getting voice control over the Raspberry Pi. This could be with or without the Echo - the omni-directional mic makes a great case for using the Echo. However, I would much prefer to use something open source like Mycroft, or more likely Jasper. 
+
+I’m still in the process of setting this blog up properly but would love if you got in contact with any suggestions, caveats etc. As I am brand new to all this machine learning stuff, but hopefully I can do something that impacts at least one persons’ life. 
+
+Potential future issues:
+•   Security, how do you deal with having a always on webcam? Potentially only activate it after the voice command. Ensure network is secure?
+•   Portability, can others use this will minimal expenditure and effort? Is it portable? Ideally one wouldn’t need and Echo on top of a Pi, how do we get around this?
+•   Pull requests, can other developers hack on this easily and add to the code base? Initially this is a personal project, but I would absolutely love the help of others. 
+•   How can this be “scaled” to other rooms, at minimal cost?
+•   Could an emergency feature be built in? i.e. if there has been an accident can a set of steps be taken to resolve this. For example, SMS entire family that there is an issue at home. 
+
+</p>
 </body>
 </html>
